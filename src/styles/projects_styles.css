@@ -1,0 +1,141 @@
+html {
+    background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    hyphens: auto;
+    z-index: 1;
+}
+#main-bio-new{
+    display: none;
+}
+li>a.black{
+    color: #000000;
+}
+#header{
+    position: absolute;
+    top: 15%;
+    color: #fffcff;
+    left: 30%;
+    width: 40%;
+    text-align: center;
+    font-weight: 2em;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Futura, sans-serif ;
+    line-height: 1.3;
+}
+
+
+
+
+#proj1{
+    grid-area: proj1;
+}
+#proj2{
+    grid-area: proj2;
+}
+#proj3 {
+    grid-area: proj3;
+}
+
+#grid-container-projects {
+
+    /*background-color: rgba(248,248,248,0.52);*/
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    top: 30%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "proj1 proj2 proj3";
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 60%;
+
+}
+
+
+#grid-container-projects>div{
+    background-color: rgba(36,36,36,0.52);
+    margin: 10%;
+    text-align: center;
+    color: #fffcff;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+#grid-container-projects>div>p{
+    display: flex;
+    min-width:200px;
+    max-width:200px;
+    text-align: center;
+    word-spacing: 5px;
+    margin: 10px auto;
+}
+#grid-container-projects>div>h1{
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
+.site-git-links{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 10%;
+    margin: 10px 10% 10px 0;
+}
+.site-git-links>li{
+    display: inline;
+}
+.social-img{
+    max-width: 2.4em;
+    margin: 0 1em 20px 1em;
+}
+
+.project-img{
+    max-width: 6em;
+    margin: 20px;
+}
+
+@media screen and (max-width: 745px) {
+    #grid-container-projects {
+
+        /*background-color: rgba(248,248,248,0.52);*/
+        width: 80%;
+        left: 10%;
+        position: absolute;
+        top: 30%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+                "proj1"
+                "proj2"
+                "proj3";
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 60%;
+
+    }
+    #grid-container-projects>div{
+        background-color: rgba(36,36,36,0.52);
+        margin: 10%;
+        height: 350px;
+        text-align: center;
+        color: #fffcff;
+        position: relative;
+    }
+    .social-img{
+        max-width: 2.5em;
+        margin: 0 20px 0 20px;
+    }
+
+    .project-img{
+        max-width: 6em;
+        margin: 20px;
+    }
+}

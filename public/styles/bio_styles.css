@@ -1,0 +1,121 @@
+
+html {
+    background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    hyphens: auto;
+    z-index: 1;
+}
+.loading-pic{
+    position: fixed;
+    width: 100px;
+    left: 40%;
+    background: url("../images/loader4.png") no-repeat center fixed;
+    hyphens: auto;
+    z-index: 10001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fffcff;
+}
+
+#container{
+    display: inline-block;
+    max-width: 50%;
+    margin-top: 15%;
+}
+
+
+#ava{
+    max-width: 5em;
+}
+#name{
+    padding: 0 10px 10px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#head>p{
+    padding: 10px;
+}
+
+.social-img{
+    max-width: 2em;
+    margin: 0 10px 0 10px;
+}
+#head>p:last-of-type{
+    padding: 0;
+    margin: 10px;
+    max-width: 500px;
+}
+#highlight{
+    background-color: rgba(14,14,14,0.22);
+    line-height: 1.5em;
+}
+a.navlink:hover:after {
+    width: 97%;
+    left: 0;
+}
+li{
+    display: inline;
+}
+
+a.navlink {
+    letter-spacing: 0.15em;
+    transition: color 0.5s ease-out;
+    display: inline-block;
+    margin: 0 15px 0 20px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 700px) {
+    #container{
+        max-width: 70%;
+        margin-top: 25%;
+    }
+    #highlight{
+        background-color: rgba(14,14,14,0.82);
+    }
+    #name{
+        font-size: 1.3em;
+    }
+}
+/*
+
+.loader{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    background-color: #fffcff;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+!*.loader>img{
+    width: 100px;
+}*!
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+}*/
