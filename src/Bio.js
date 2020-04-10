@@ -74,7 +74,7 @@ class Bio extends Component{
                         </div>
                         <nav id="navbar">
                             <ul>
-                                <li className="active"><a href="/bio" className="navlink">Bio</a></li>
+                                <li className="active"><a href="/" className="navlink">Bio</a></li>
                                 <li><a href="/projects" className="navlink">Projects</a></li>
                                 <li><a href="/resume" className="navlink">Resume</a></li>
                             </ul>

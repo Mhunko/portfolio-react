@@ -40,7 +40,7 @@ class App extends Component {
             <Router>
                 <Switch>
                     <ul>
-                        <Route path="/bio" exact component={Bio}/>
+                        <Route path="/" exact component={Bio}/>
                         <Route path="/projects" exact component={Projects}/>
                         <Route path="/resume" exact component={Resume}/>
                     </ul>

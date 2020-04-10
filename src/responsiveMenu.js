@@ -42,7 +42,7 @@ class ResponsiveMenu extends Component {
         return (<div className="App">
                 <div id="mainbox" ref={this.myRefMainBox} onClick={this.menuOpenHandler}>&#9776;</div>
                 <div id="menu" className="sidemenu" ref={this.myRefMenu} style={{textAlign: 'left'}}>
-                    <a href="/bio" style={{marginTop: '40px'}} ref={this.bioLink}>Bio</a>
+                    <a href="/" style={{marginTop: '40px'}} ref={this.bioLink}>Bio</a>
                     <a href="/projects" ref={this.projectsLink}>Projects</a>
                     <a href="/resume" ref={this.resumeLink}>Resume</a>
                     <a href="#" className="closebtn" onClick={this.menuCloseHandler}>&times;</a>

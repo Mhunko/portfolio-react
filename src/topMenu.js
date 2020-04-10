@@ -31,7 +31,7 @@ class TopMenu extends Component {
                 <header>
                     <div className="top-navigation">
                         <ul className="inline-bar">
-                            <li><Link to="/bio"><a className="navlink" ref={this.bioLink}>Bio</a></Link></li>
+                            <li><Link to="/"><a className="navlink" ref={this.bioLink}>Bio</a></Link></li>
                             <li><a href="/projects" className="navlink active" ref={this.projectsLink}>Projects</a></li>
                             <li><a href="/resume" className="navlink" ref={this.resumeLink}>Resume</a></li>
                         </ul>

@@ -76,7 +76,9 @@ class Projects extends Component{
                 </div>
 
                 <ResponsiveMenu />
-
+                <div className="loader" ref={this.loader}>
+                    <img src="images/loader4.png"/>
+                </div>
             </div>
 
         );
