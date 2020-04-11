@@ -60,9 +60,9 @@ class Resume extends Component {
                             I’m fluent in English, Ukrainian and Russian.
                             My main field of interest is web programming - both front and back end. I also have
                             experience with technologies
-                            like git/github, mongodb, and a little experience with Linux.
+                            like git/github, mongodb, React JS and a little experience with Linux.
                         </p>
-                        <h1>HTML/CSS</h1>
+                        <h1>React JS</h1>
                         <div className="container">
                             <div className="skills html">70%</div>
                         </div>

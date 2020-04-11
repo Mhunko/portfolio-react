@@ -120,6 +120,7 @@ li>a.black{
         grid-template-rows: 1fr 1fr 1fr;
         height: 60%;
 
+
     }
     #grid-container-projects>div{
         background-color: rgba(36,36,36,0.52);
@@ -138,4 +139,5 @@ li>a.black{
         max-width: 6em;
         margin: 20px;
     }
+
 }

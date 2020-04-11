@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-posrtbuild": "npm run build"
+    "heroku-posrtbuild": "npm run build",
+    "my_run": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"

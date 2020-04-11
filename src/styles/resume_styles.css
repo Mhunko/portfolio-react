@@ -57,6 +57,10 @@ html {
                 "image"
                 "text";
         grid-template-rows: 1fr 1fr;
+        background-color: transparent;
+    }
+    #text-content-resume{
+        padding-bottom: 70px;
     }
 }
 
