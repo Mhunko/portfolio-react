@@ -9,18 +9,30 @@ html {
 }
 
 #resume-main-image{
-    grid-area: image;
+    grid-area: inherit;
     background-color: rgba(26,26,26,0.52);
     margin: 10px;
 
 }
 #resume-main-image{
-    background: url("../images/portrait-dummy.jpg");
+    background: url("../images/big_photo.JPG");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+/*#resume-main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+#resume-main-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}*/
+
 #text-content-resume{
     grid-area: text;
     background-color: rgba(26,26,26,0.52);
@@ -36,7 +48,7 @@ html {
     text-align: right;
 }
 #grid-container-resume {
-    background-color: rgba(248,248,248,0.52);
+    /*background-color: rgba(248,248,248,0.52);*/
     width: 98%;
     left: 1%;
     margin-right: 1%;
