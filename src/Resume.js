@@ -1,15 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
-import Projects from "./Projects";
-import Bio from "./Bio";
-import App from "./App";
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
-import ResponsiveMenu from "./responsiveMenu";
-import TopMenu from "./topMenu";
+import ResponsiveMenu from "./components/ResponsiveMenu";
+import TopMenu from "./components/TopMenu";
 import './styles/reset.css'
 import './styles/site_styles.css'
 import './styles/resume_styles.css'
-
 
 
 class Resume extends Component {
@@ -18,20 +13,8 @@ class Resume extends Component {
         this.myRefMenu = React.createRef();
         this.myRefMainBox = React.createRef();
         this.loader = React.createRef();
-
-
     }
 
-    menuOpenHandler = () => {
-        console.log(this.myRefMenu.current)
-        this.myRefMenu.current.style.width = "300px"
-        this.myRefMainBox.current.style.color = "rgba(14,14,14,0.12)"
-    }
-
-    menuCloseHandler = () => {
-        this.myRefMenu.current.style.width = "0px"
-        this.myRefMainBox.current.style.color = "#fffcff"
-    }
     componentDidMount() {
         const loader = this.loader.current
         if (loader) {
@@ -40,6 +23,7 @@ class Resume extends Component {
             }, 1000)
         }
     }
+
     render() {
 
 
@@ -50,45 +34,45 @@ class Resume extends Component {
                     <div id="text-content-resume">
                         <h1>professional summary</h1>
                         <p>
-                            I am an international student from Ukraine currently studying at Green River College. I will
-                            get my
-                            Associate Degree in IT by the end of the spring 2020 and will look forward to achieving a
-                            Bachelor’s Degree in software development.
+                            Im a versatile web developer with 2+ years of experience designing building and maintaining
+                            responsive web resources. My main specialty is frontend development using React.
+
                         </p>
-                        <h1>languages and skills</h1>
-                        <p>
-                            I’m fluent in English, Ukrainian and Russian.
-                            My main field of interest is web programming - both front and back end. I also have
-                            experience with technologies
-                            like git/github, mongodb, React JS and a little experience with Linux.
+                        <h1>languages, technologies and skills</h1>
+                        <p className="tech-list">
+                            <ul>
+                                <li className="tech-li">
+                                    Javascript(node, ES6+) <div className="progress-lines"><span className="line-1">-----</span><span className="line-2">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    React <div className="progress-lines"><span className="line-1">-----</span><span className="line-2">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    Express <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    Mongodb <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5 ">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    Typescript <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3 blank">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    Redux/Saga <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3 blank">-----</span><span className="line-4 blank">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    git/github <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                                <li className="tech-li">
+                                    Webpack <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3 blank">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
+                                </li>
+                            </ul>
                         </p>
-                        <h1>React JS</h1>
-                        <div className="container">
-                            <div className="skills html">70%</div>
-                        </div>
-
-                        <h1>JavaScript/NodeJS</h1>
-                        <div className="container">
-                            <div className="skills js">70%</div>
-                        </div>
-
-                        <h1>Python</h1>
-                        <div className="container">
-                            <div className="skills python">50%</div>
-                        </div>
-
-                        <h1>Java</h1>
-                        <div className="container">
-                            <div className="skills java">40%</div>
-                        </div>
                     </div>
                 </div>
 
-                <ResponsiveMenu />
-
-
+                <ResponsiveMenu/>
                 <div className="loader" ref={this.loader}>
-                    <img src="images/loader4.png"/>
+                    <img src="images/loader4.png" alt=""/>
                 </div>
 
             </div>

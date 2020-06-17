@@ -5,7 +5,7 @@ import './App.css';
 import Bio from './Bio'
 import Projects from "./Projects";
 import Resume from "./Resume";
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 /*import {connect} from 'react-redux'*/
 import './styles/reset.css'
 import './styles/site_styles.css'
@@ -22,17 +22,6 @@ class App extends Component {
 
     componentDidMount() {
         console.log(this.myRefMenu.current)
-    }
-
-    menuOpenHandler = () => {
-        console.log(this.myRefMenu.current)
-        this.myRefMenu.current.style.width = "300px"
-        this.myRefMainBox.current.style.color = "rgba(14,14,14,0.12)"
-    }
-
-    menuCloseHandler = () => {
-        this.myRefMenu.current.style.width = "0px"
-        this.myRefMainBox.current.style.color = "#fffcff"
     }
 
     render() {

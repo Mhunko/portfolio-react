@@ -1,12 +1,8 @@
 import React, {Component} from 'react';
-/*import { Project } from 'react';*/
-/*import loader from '/images/loader3.gif';*/
-import './App.css';
-/*import {connect} from 'react-redux'*/
-import Projects from "./Projects";
 
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
-import ResponsiveMenu from "./responsiveMenu";
+import './App.css';
+
+import ResponsiveMenu from "./components/ResponsiveMenu";
 import './styles/reset.css'
 import './styles/site_styles.css'
 import './styles/bio_styles.css'
@@ -20,18 +16,6 @@ class Bio extends Component{
         this.myRefMainBox = React.createRef();
         this.loader = React.createRef();
         this.bioLink = React.createRef();
-
-
-    }
-    menuOpenHandler = () => {
-        console.log(this.myRefMenu.current)
-        this.myRefMenu.current.style.width="300px"
-        this.myRefMainBox.current.style.color="rgba(14,14,14,0.12)"
-    }
-
-    menuCloseHandler = () => {
-        this.myRefMenu.current.style.width="0px"
-        this.myRefMainBox.current.style.color="#fffcff"
     }
     componentDidMount() {
         const loader = this.loader.current
@@ -50,7 +34,7 @@ class Bio extends Component{
                 <header id="main-bio-content">
                     <div id="container-bio">
                         <div id="head">
-                            <img id="ava" src="images/ava.png"/>
+                            <img id="ava" src="images/ava.png" alt=""/>
                             <p>Greetings, my name is</p>
                             <h1 id="name">Maksym Hunko</h1>
                             <ul id="social">
@@ -85,7 +69,7 @@ class Bio extends Component{
 
 
                 <div className="loader" ref={this.loader}>
-                    <img src="images/loader4.png"/>
+                    <img src="images/loader4.png" alt=""/>
                 </div>
 
             </div>

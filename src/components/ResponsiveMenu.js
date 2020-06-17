@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import './App.css';
+import {Link} from "react-router-dom";
+
 
 
 
@@ -42,10 +43,10 @@ class ResponsiveMenu extends Component {
         return (<div className="App">
                 <div id="mainbox" ref={this.myRefMainBox} onClick={this.menuOpenHandler}>&#9776;</div>
                 <div id="menu" className="sidemenu" ref={this.myRefMenu} style={{textAlign: 'left'}}>
-                    <a href="/" style={{marginTop: '40px'}} ref={this.bioLink}>Bio</a>
-                    <a href="/projects" ref={this.projectsLink}>Projects</a>
-                    <a href="/resume" ref={this.resumeLink}>Resume</a>
-                    <a href="#" className="closebtn" onClick={this.menuCloseHandler}>&times;</a>
+                    <Link to="/" style={{marginTop: '40px'}} ref={this.bioLink}>Bio</Link>
+                    <Link to="/projects" ref={this.projectsLink}>Projects</Link>
+                    <Link to="/resume" ref={this.resumeLink}>Resume</Link>
+                    <Link className="closebtn" onClick={this.menuCloseHandler}>&times;</Link>
                 </div>
             </div>
         );
