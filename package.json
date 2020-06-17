@@ -19,8 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "serve -s build",
-    "buildnative": "react-scripts build",
+    "build": "react-scripts build",
+    "buildserve": "serve -s build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-posrtbuild": "npm run build",
