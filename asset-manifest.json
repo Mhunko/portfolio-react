@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.ec3de8e5.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.36c24961.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.36c24961.chunk.js.map",
-    "runtime-main.js": "/portfolio-react/static/js/runtime-main.70e43ac6.js",
-    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.70e43ac6.js.map",
-    "static/js/2.6eeb1247.chunk.js": "/portfolio-react/static/js/2.6eeb1247.chunk.js",
-    "static/js/2.6eeb1247.chunk.js.map": "/portfolio-react/static/js/2.6eeb1247.chunk.js.map",
-    "index.html": "/portfolio-react/index.html",
-    "precache-manifest.23e7db85f7b76279d574fdccb60d91f9.js": "/portfolio-react/precache-manifest.23e7db85f7b76279d574fdccb60d91f9.js",
-    "service-worker.js": "/portfolio-react/service-worker.js",
-    "static/css/main.ec3de8e5.chunk.css.map": "/portfolio-react/static/css/main.ec3de8e5.chunk.css.map",
-    "static/js/2.6eeb1247.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.6eeb1247.chunk.js.LICENSE.txt",
-    "static/media/resume_styles.css": "/portfolio-react/static/media/seattle-background-dark.a5e5ba46.jpg",
-    "static/media/bio_styles.css": "/portfolio-react/static/media/loader4.292f0fd6.png"
+    "main.css": "/static/css/main.8b1708c2.chunk.css",
+    "main.js": "/static/js/main.edb08777.chunk.js",
+    "main.js.map": "/static/js/main.edb08777.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.098a087d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.098a087d.js.map",
+    "static/js/2.6eeb1247.chunk.js": "/static/js/2.6eeb1247.chunk.js",
+    "static/js/2.6eeb1247.chunk.js.map": "/static/js/2.6eeb1247.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ca7a5384c123865aa8d54e6c0c37c080.js": "/precache-manifest.ca7a5384c123865aa8d54e6c0c37c080.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8b1708c2.chunk.css.map": "/static/css/main.8b1708c2.chunk.css.map",
+    "static/js/2.6eeb1247.chunk.js.LICENSE.txt": "/static/js/2.6eeb1247.chunk.js.LICENSE.txt",
+    "static/media/resume_styles.css": "/static/media/seattle-background-dark.a5e5ba46.jpg",
+    "static/media/bio_styles.css": "/static/media/loader4.292f0fd6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.70e43ac6.js",
+    "static/js/runtime-main.098a087d.js",
     "static/js/2.6eeb1247.chunk.js",
-    "static/css/main.ec3de8e5.chunk.css",
-    "static/js/main.36c24961.chunk.js"
+    "static/css/main.8b1708c2.chunk.css",
+    "static/js/main.edb08777.chunk.js"
   ]
 }
