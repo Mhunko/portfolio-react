@@ -65,7 +65,7 @@ class Projects extends Component{
                                                                                alt="Github page"
                                                                                className="social-img"/></a>
                             </li>
-                            <li><a href="#"><img src="./images/logos/weblogo.png"
+                            <li><a href="/"><img src="./images/logos/weblogo.png"
                                                  className="social-img" alt=""/></a></li>
                         </ul>
                     </div>
