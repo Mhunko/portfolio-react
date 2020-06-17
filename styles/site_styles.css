@@ -1,0 +1,225 @@
+
+
+html {
+    background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    hyphens: auto;
+    z-index: 1;
+}
+body{
+    font-family: Futura, sans-serif ;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+#ava{
+    max-width: 5em;
+}
+
+.down-arrow-img{
+    margin: 10px 0 0 0;
+    max-width: 10%;
+    padding: 0;
+}
+
+
+.top-navigation{
+    padding: 20px 0 0 0;
+    background-color: rgba(19,19,19,0.00);
+    position: absolute;
+    top: -75px;
+    left: 15%;
+    transition: 0.7s;
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+
+}
+header>div>.inline-bar>li{
+    display: inline-grid;
+    padding: 0 2em 0.8em 2em;
+    margin: 0;
+
+}
+a.navlink {
+    display: inline;
+    color: #fffcff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin-top: 20px;
+}
+a.navlink:hover{
+    color: #cbd4c2;
+}
+a.navlink:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+
+.top-navigation>a.active{
+    color: #cbd4c2;
+}
+.active>a.navlink:after{
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: width 1s ease 0s, left 1s ease 0s;
+    width: 94%;
+    left: 0;
+}
+
+.active>a.navlink:hover:after {
+    width: 0;
+    left: 50%;
+}
+
+.top-navigation:hover {
+    top: 0px; /* On mouse-over, make the elements appear as they should */
+}
+
+.navigation_ava{
+    margin: 0 0 30px 70px;
+}
+ul>li>a.active{
+    color: #cbd4c2;
+}
+/*small load animation */
+/*#body{
+    transform: scale(1.3);
+    animation: scaleDown 0.5s linear forwards;
+}*/
+
+.loader{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    background-color: #4b4b4b;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader>img{
+    /*width: 100px*/;
+    background-color: transparent;
+}
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+/*@keyframes scaleDown{
+    to {
+        transform: scale(1);
+    }
+}*/
+
+@media screen and (min-width: 701px) {
+    #menu {
+        display: none;
+    }
+
+    #mainbox {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .top-navigation{
+        display: none;
+    }
+
+
+    #container{
+        max-width: 70%;
+        margin-top: 25%;
+    }
+    #navbar{
+        display: none;
+    }
+    .social-img {
+        max-width: 1.5em;
+        margin: 0;
+    }
+
+    .sidemenu{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 200%;
+        width: 0px;
+        background-color: rgba(14,14,14,0.92);
+        z-index: 1;
+        padding-top: 100px;
+        overflow-x: hidden;
+        transition: width 0.5s;
+    }
+    #mainbox{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #fffcff;
+        cursor: pointer;
+        z-index: 1;
+        transition: color 1.5s;
+        font-size: 2em;
+    }
+    .sidemenu>a{
+        padding: 8px 8px 8px 64px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #999;
+        display: block;
+    }
+    .sidemenu>a:hover{
+        color: #fffcff;
+    }
+    .closebtn{
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 32px;
+    }
+    #menu{
+        padding-top: 50px;
+    }
+    #menu>a.active{
+        color: #fffcff;
+    }
+    #menu>#ava{
+        max-width: 5em;
+        margin: 60px;
+    }
+}
+
