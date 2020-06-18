@@ -34,11 +34,11 @@ class Resume extends Component {
                     <div id="text-content-resume">
                         <h1>professional summary</h1>
                         <p>
-                            Im a versatile web developer with 2+ years of experience designing building and maintaining
+                            I'm a versatile web developer with 2+ years of experience designing building and maintaining
                             responsive web resources. My main specialty is frontend development using React.
 
                         </p>
-                        <h1>languages, technologies and skills</h1>
+                        <h1>languages and technologies</h1>
                         <p className="tech-list">
                             <ul>
                                 <li className="tech-li">
@@ -57,7 +57,7 @@ class Resume extends Component {
                                     Typescript <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3 blank">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
                                 </li>
                                 <li className="tech-li">
-                                    Redux/Saga <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3 blank">-----</span><span className="line-4 blank">-----</span><span className="line-5">-----</span></div>
+                                    Redux/Saga <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2 blank">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>
                                 </li>
                                 <li className="tech-li">
                                     git/github <div className="progress-lines"><span className="line-1 blank">-----</span><span className="line-2">-----</span><span className="line-3">-----</span><span className="line-4">-----</span><span className="line-5">-----</span></div>

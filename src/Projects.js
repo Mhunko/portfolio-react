@@ -45,28 +45,26 @@ class Projects extends Component{
                         </ul>
                     </div>
                     <div id="proj2">
-                        <img className="project-img" src="./images/proj-weather.png" alt=""/>
-                        <h1>Toy Weather Website</h1>
-                        <p>A simple weather website written in NodeJS using darksky API</p>
+                        <img className="project-img" src="./images/persist.png" alt=""/>
+                        <h1>Redux persist test project</h1>
+                        <p>Toy website that utilizes react redux and can rehydrate state after page refresh</p>
                         <ul className="site-git-links">
-                            <li><a href="https://github.com/podgulyavhyy/weather-web-application"><img
+                            <li><a href="https://github.com/podgulyavhyy/react-redux-saga-persist-test"><img
                                 src="./images/logos/gitlogo.png" alt="Github page" className="social-img"/></a></li>
-                            <li><a href="https://hunko-weather-application.herokuapp.com/"><img
+                            <li><a href="https://reactreduxpersist.herokuapp.com/"><img
                                 src="./images/logos/weblogo.png" alt="Project page" className="social-img"/></a></li>
                         </ul>
                     </div>
                     <div id="proj3">
-                        <img className="project-img" src="./images/undefined.png" alt=""/>
-                        <h1>Under construction</h1>
-                        <p>I am currently working on this project, you will see it here as soon as it will be
-                            completed</p>
+                        <img className="project-img" src="./images/book_proj1.png" alt=""/>
+                        <h1>Book List Project</h1>
+                        <p>Full stack project with user authentication that allows you to keep track of your book goals.</p>
                         <ul className="site-git-links">
-                            <li><a href="https://github.com/podgulyavhyy"><img src="./images/logos/gitlogo.png"
+                            <li><a href="https://github.com/podgulyavhyy/book-list-project"><img src="./images/logos/gitlogo.png"
                                                                                alt="Github page"
                                                                                className="social-img"/></a>
                             </li>
-                            <li><a href="/"><img src="./images/logos/weblogo.png"
-                                                 className="social-img" alt=""/></a></li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>

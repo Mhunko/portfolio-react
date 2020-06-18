@@ -11,7 +11,7 @@ class TopMenu extends Component {
                     <div className="top-navigation">
                         <ul className="inline-bar">
                             <li><Link to="/"><a href="/" className="navlink" ref={this.bioLink}>Bio</a></Link></li>
-                            <li><Link to="/projects" className="navlink active" ref={this.projectsLink}>Projects</Link></li>
+                            <li><Link to="/projects" className="navlink" ref={this.projectsLink}>Projects</Link></li>
                             <li><Link to="/resume" className="navlink" ref={this.resumeLink}>Resume</Link></li>
                         </ul>
                         <img className="down-arrow-img" src="./images/down-arrow.png" alt=""/>
