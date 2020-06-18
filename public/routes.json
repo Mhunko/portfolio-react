@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "route": "/projects",
+      "serve": "/projects"
+    },
+    {
+      "route": "/resume",
+      "serve": "/resume"
+    }
+  ]
+}
