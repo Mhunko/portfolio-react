@@ -28,11 +28,9 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
-                    <ul>
                         <Route path="/" exact component={Bio}/>
                         <Route path="/projects" exact component={Projects}/>
                         <Route path="/resume" exact component={Resume}/>
-                    </ul>
                 </Switch>
             </Router>
 

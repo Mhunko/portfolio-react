@@ -1,12 +1,9 @@
 {
   "routes": [
     {
-      "route": "/projects",
-      "serve": "/Projects.js"
-    },
-    {
-      "route": "/resume",
-      "serve": "/Resume"
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
     }
   ]
 }
