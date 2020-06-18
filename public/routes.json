@@ -1,10 +1,12 @@
 {
   "routes": [
     {
-      "route": "/projects"
+      "route": "/projects",
+      "serve": "/Projects.js"
     },
     {
-      "route": "/resume"
+      "route": "/resume",
+      "serve": "/Resume"
     }
   ]
 }
