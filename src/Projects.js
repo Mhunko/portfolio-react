@@ -32,14 +32,13 @@ class Projects extends Component{
                 <h1 id="header">My projects</h1>
                 <div id="grid-container-projects">
                     <div id="proj1">
-                        <img className="project-img" src="./images/proj-bot.png" alt=""/>
-                        <h1>Telegram Encryption Bot</h1>
-                        <p>Telegram bot that encrypts your messages using prime number encryption algorithm written in
-                            Python</p>
+                        <img className="project-img" src="./images/weather_app.png" alt=""/>
+                        <h1>Weather app</h1>
+                        <p>My very first very simple app for searching weather data using darksky api.</p>
                         <ul className="site-git-links">
-                            <li><a href="https://github.com/podgulyavhyy/Prime-Number-Encryption-Telegram-Bot-1.0"><img
+                            <li><a href="https://github.com/podgulyavhyy/weather-web-application"><img
                                 src="./images/logos/gitlogo.png" alt="Github page" className="social-img"/></a></li>
-                            <li><a href="https://t.me/primenum_bot"><img src="./images/logos/weblogo.png"
+                            <li><a href="https://hunko-weather-application.herokuapp.com/"><img src="./images/logos/weblogo.png"
                                                                          alt="Project page" className="social-img"/></a>
                             </li>
                         </ul>

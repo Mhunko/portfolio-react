@@ -53,7 +53,7 @@ class Bio extends Component{
                                                                               className="social-img"/></a></li>
                             </ul>
 
-                            <p><span id="highlight">I am a Web developer from Kiev, Ukraine currently based in Seattle and I am looking forward to be working with you! Please use this website to learn more about me and my work.</span>
+                            <p><span id="highlight">I am a Web developer from Kyiv, Ukraine currently based in Seattle and I am looking forward to be working with you! Please use this website to learn more about me and my work.</span>
                             </p>
                         </div>
                         <nav id="navbar">
