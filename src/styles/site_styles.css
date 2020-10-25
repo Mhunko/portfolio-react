@@ -1,17 +1,19 @@
 html {
-    background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
+    /*background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     hyphens: auto;
-    z-index: 1;
+    z-index: 1;*/
+    /*background-color: #bbbbbb;*/
+    background-color: #000000;
 }
 body{
     font-family: Futura, sans-serif ;
 }
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #ava{
@@ -35,7 +37,6 @@ h1{
     width: 70%;
     font-size: 20px;
     text-align: center;
-
 }
 header>div>.inline-bar>li{
     display: inline-grid;

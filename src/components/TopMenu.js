@@ -6,7 +6,8 @@ import {Link} from 'react-router-dom'
 
 class TopMenu extends Component {
     render() {
-        return (<div className="App">
+        return (
+            <div className="App">
                 <header>
                     <div className="top-navigation">
                         <ul className="inline-bar">

@@ -1,4 +1,4 @@
-html {
+/*html {
     background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,7 +6,7 @@ html {
     background-size: cover;
     hyphens: auto;
     z-index: 1;
-}
+}*/
 
 #resume-main-image{
     grid-area: inherit;

@@ -27,14 +27,15 @@ class Resume extends Component {
     render() {
 
 
-        return (<div className="App">
+        return (
+            <div className="App">
                 <TopMenu/>
                 <div id="grid-container-resume">
                     <div id="resume-main-image"></div>
                     <div id="text-content-resume">
                         <h1>professional summary</h1>
                         <p>
-                            I'm a versatile web developer with 2+ years of experience designing building and maintaining
+                            I'm a web developer with 2+ years of experience designing building and maintaining
                             responsive web resources. My main specialty is frontend development using React.
 
                         </p>

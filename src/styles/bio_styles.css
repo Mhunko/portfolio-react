@@ -1,5 +1,5 @@
 
-html {
+/*html {
     background: transparent url("../images/seattle-background-dark.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -7,7 +7,7 @@ html {
     background-size: cover;
     hyphens: auto;
     z-index: 1;
-}
+}*/
 .loading-pic{
     position: fixed;
     width: 100px;
@@ -58,7 +58,7 @@ header{
     max-width: 500px;
 }
 #highlight{
-    background-color: rgba(14,14,14,0.22);
+    background-color: rgba(14,14,14,0.72);
     line-height: 1.5em;
 }
 a.navlink:hover:after {
@@ -76,6 +76,30 @@ a.navlink {
     margin: 0 15px 0 20px;
     position: relative;
 }
+#facebook-bio{
+    grid-area: fb;
+}
+#github-bio{
+    grid-area: github;
+}
+#instagram-bio{
+    grid-area: inst;
+}
+#telegram-bio{
+    grid-area: teleg;
+}
+
+#social {
+    display: block;
+}
+#social {
+    display: grid;
+    /*justify-items: center;*/
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-areas:
+                "fb github inst teleg";
+}
 
 
 @media screen and (max-width: 700px) {
@@ -89,33 +113,21 @@ a.navlink {
     #name{
         font-size: 1.3em;
     }
-}
-/*
-
-.loader{
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    background-color: #fffcff;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-!*.loader>img{
-    width: 100px;
-}*!
-.loader.hidden{
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-    100%{
-        opacity: 0;
-        visibility: hidden;
+    #row1-links{
+        padding-bottom: 10px;
     }
-    
-}*/
+
+    #social {
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+                "fb github"
+                "inst teleg";
+    }
+}
+@media screen and (min-width: 500px) {
+    #social {
+        height: 40px;
+    }
+}
+
