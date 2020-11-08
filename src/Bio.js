@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-
 import './App.css';
-
 import ResponsiveMenu from "./components/ResponsiveMenu";
 import './styles/reset.css'
 import './styles/site_styles.css'
 import './styles/bio_styles.css'
-import {gsap} from 'gsap'
+//import {gsap} from 'gsap'
+import {Link} from "react-router-dom";
 
 
 class Bio extends Component {
@@ -19,17 +18,11 @@ class Bio extends Component {
     }
 
     componentDidMount() {
-        /*let tl = gsap.timeline({defaults: {duration: 1, y: -1000, ease: "power1",}});
-        tl.from('#bio-b', {
-            delay: 1.5,
-        })*/
+
         const loader = this.loader.current
-        gsap.from('#bio-b', {duration:2, y: -1000, delay: 3})
-        /*this.bioLink.className += "active"*/
+
         if (loader) {
-            setTimeout(() => {
-                loader.className += " hidden"
-            }, 1000)
+               loader.className += " hidden"
         }
     }
 
@@ -68,9 +61,9 @@ class Bio extends Component {
                         </div>
                         <nav id="navbar">
                             <ul>
-                                <li className="active"><a href="/" className="navlink"><span id="bio-b">B</span>io</a></li>
-                                <li><a href="/projects" className="navlink">Projects</a></li>
-                                <li><a href="/resume" className="navlink">Resume</a></li>
+                                <li><Link to="/" className="navlink" ref={this.bioLink}>Bio</Link></li>
+                                <li><Link to="/projects" className="navlink" ref={this.projectsLink}>Projects</Link></li>
+                                <li><Link to="/resume" className="navlink" ref={this.resumeLink}>Resume</Link></li>
                             </ul>
                         </nav>
                     </div>

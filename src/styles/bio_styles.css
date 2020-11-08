@@ -52,6 +52,18 @@ header{
     max-width: 2em;
     margin: 10px;
 }
+
+.social-img:active{
+    border-style: outset;
+}
+
+.social-img:focus{
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
 #head>p:last-of-type{
     padding: 0;
     margin: 10px;

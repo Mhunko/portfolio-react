@@ -5,41 +5,35 @@ import TopMenu from "./components/TopMenu";
 import './styles/reset.css'
 import './styles/site_styles.css'
 import './styles/projects_styles.css'
-//import './styles/styles.scss'
 import {gsap} from 'gsap'
-
-
 
 class Projects extends Component{
     constructor(props) {
         super(props);
-        this.myRefMenu = React.createRef();
-        this.myRefMainBox = React.createRef();
         this.loader = React.createRef();
         this.testAni = React.createRef();
+        this.topMenu = React.createRef();
     }
+
     componentDidMount() {
-        let tl = gsap.timeline({defaults: {duration: 1, y: -1000, ease: "power1",}});
-        tl.from('#proj3', {
-            delay: 1,
-        })
-        tl.from('#proj2', {}, 1.5)
-        tl.from('#proj1', {}, 2)
-        tl.from('#header', {}, 2.2)
-        tl.from('.down-arrow-img', {}, 2.3)
-        //gsap.from('.down-arrow-img', {duration:1, y: -1000, delay: 3})
+        let tlProjects = gsap.timeline({defaults: {duration: 1, y: -1000, ease: "power1",}});
+        tlProjects.from('#proj3', {delay: 0})
+        tlProjects.from('#proj2', {}, 0.5)
+        tlProjects.from('#proj1', {}, 1)
+        tlProjects.from('#header', {}, 1.2)
+        tlProjects.from('.top-navigation', {}, 0.8)
+
         const loader = this.loader.current
         if (loader) {
-            setTimeout(() => {
-                loader.className += " hidden"
-            }, 1000)
+            loader.className += " hidden"
         }
     }
 
     render() {
         return (
             <div>
-                <TopMenu className={"topmenu"}/>
+                <TopMenu className="topmenu" ref={this.topMenu}/>
+
                 <h1 id="header">My projects</h1>
                 <div id="grid-container-projects">
                     <div id="proj1" ref={this.testAni}>
@@ -78,6 +72,7 @@ class Projects extends Component{
                         </ul>
                     </div>
                 </div>
+
 
                 <ResponsiveMenu />
                 <div className="loader" ref={this.loader}>

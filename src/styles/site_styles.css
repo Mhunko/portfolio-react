@@ -88,6 +88,8 @@ a.navlink:after {
     left: 50%;
 }
 
+
+
 .top-navigation:hover {
     top: 0px; /* On mouse-over, make the elements appear as they should */
 }

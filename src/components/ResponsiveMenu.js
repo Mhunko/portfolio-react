@@ -20,7 +20,7 @@ class ResponsiveMenu extends Component {
     }
 
     menuOpenHandler = () => {
-        console.log(this.myRefMenu.current)
+        /*console.log(this.myRefMenu.current)*/
         this.myRefMenu.current.style.width = "300px"
         this.myRefMainBox.current.style.color = "rgba(14,14,14,0.12)"
     }
@@ -46,7 +46,7 @@ class ResponsiveMenu extends Component {
                     <Link to="/" style={{marginTop: '40px'}} ref={this.bioLink}>Bio</Link>
                     <Link to="/projects" ref={this.projectsLink}>Projects</Link>
                     <Link to="/resume" ref={this.resumeLink}>Resume</Link>
-                    <Link className="closebtn" onClick={this.menuCloseHandler}>&times;</Link>
+                    <Link className="closebtn" to="" onClick={this.menuCloseHandler}>&times;</Link>
                 </div>
             </div>
         );
