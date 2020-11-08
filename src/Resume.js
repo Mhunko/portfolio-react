@@ -39,7 +39,7 @@ class Resume extends Component {
             <div className="App">
                 <TopMenu/>
                 <div id="grid-container-resume">
-                    <img src="" id="resume-main-image" alt=""/>
+                    <div id="resume-main-image"></div>
                     <div id="text-content-resume">
                         <h1 id="summary-head">summary</h1>
                         <p id="summary-par">

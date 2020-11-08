@@ -1,6 +1,6 @@
 #resume-main-image{
     grid-area: inherit;
-    /*background-color: rgba(26,26,26,0.52);*/
+    background-color: rgba(26,26,26,0.52);
     margin: 10px;
 
 }
