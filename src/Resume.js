@@ -49,7 +49,7 @@ class Resume extends Component {
                         </p>
                         <h1 id="languages-head">languages and technologies</h1>
                         <p className="tech-list">
-                            React, Typescript, Javascript(node, ES6+), Sass, Redux/Saga, Webpack, Jest, git/github, SQL
+                            React, Typescript, Javascript(node, ES6+), Java, Sass, Redux/Saga, Webpack, Jest, git/github, SQL
                         </p>
                         <h1 id="workexp-head">work experience</h1>
                         <p id="workexp-par">July 2020 - Present | Xbox certification tester for BrickRed Systems - Redmond WA</p>
